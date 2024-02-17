@@ -9,6 +9,7 @@ import Queue from './Queue.jsx';
 
 function App() {
     return (
+
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/queue" element={<Queue />} />
             </Routes>
         </Router>
+        
     );
 }
 

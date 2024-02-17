@@ -1,0 +1,99 @@
+.stack-menu{
+    width: 280px;
+}
+.index-val{
+    width: 60px;
+    visibility: hidden;
+    background-color: blue;
+    margin: 0 1px;
+}
+
+.animated{
+    animation : down 3s forwards;
+}
+
+.not-animated{
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes down{
+    from {
+        transform: translateX(140px);
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        transform: translateX(10px);
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Animation for Push */
+.push-animation {
+    animation: push 1s forwards;
+  }
+  
+  @keyframes push {
+    from {
+      transform: translateY(-20px); /* Move up */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for Pop */
+  .pop-animation {
+    animation: pop 1s forwards;
+  }
+  
+  @keyframes pop {
+    from {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-20px); /* Move up */
+      opacity: 0;
+    }
+  }
+  .peek-animation {
+    animation: glitter 1s ease-in-out alternate;
+    background-color: aliceblue;
+    color: black;
+  }
+  
+  @keyframes glitter {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+      opacity: 0.5;
+      background-color: rgb(29, 139, 1);
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 1140px){
+    .stack-menu{
+      width: 100vw;
+      height: auto;
+      position: inherit;
+    }
+    .generate-stack{
+      position: absolute;
+      top: 44px;
+    }
+  }

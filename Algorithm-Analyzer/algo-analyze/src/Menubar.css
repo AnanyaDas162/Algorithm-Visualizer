@@ -1,0 +1,11 @@
+.menubar{
+    width: 280px;
+    border-right: 2px solid black;
+}
+
+.select{
+    width: 176px;
+}
+.input-btn{
+    height: 33px;
+}
